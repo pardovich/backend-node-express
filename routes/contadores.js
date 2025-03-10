@@ -4,7 +4,6 @@ const Producto = require("../models/Producto");
 
 const router = express.Router();
 
-// Obtener número total de registros en cada colección
 router.get("/", async (req, res) => {
     try {
         const totalUsuarios = await Usuario.countDocuments();
