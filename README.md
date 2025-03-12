@@ -9,6 +9,8 @@ Este proyecto es un backend desarrollado con **Node.js, Express.js y MongoDB**, 
 ```
 git clone <https://github.com/pardovich/backend-node-express/blob/main/README.md>
 cd <backend node express>
+La configuración de la conexión a la base de datos se encuentra en el archivo `.env`, el cual está disponible en el repositorio con los parámetros necesarios para su correcta ejecución.
+
 ```
 
 ### 2 **Instalar Dependencias**
