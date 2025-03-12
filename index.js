@@ -19,8 +19,8 @@ app.use(morgan("dev"));
 app.use("/contadores", contadoresRoutes);
 
 mongoose.connect(MONGO_URI)
-    .then(() => console.log("🔥 Conectado a MongoDB"))
-    .catch(err => console.error("❌ Error al conectar MongoDB:", err));
+    .then(() => console.log(" Conectado a MongoDB"))
+    .catch(err => console.error(" Error al conectar MongoDB:", err));
 
 app.use("/usuarios", usuariosRoutes);
 app.use("/productos", productosRoutes);
@@ -37,7 +37,7 @@ let totalOperaciones = 0;
 
 app.use((req, res, next) => {
     totalOperaciones++;
-    console.log(`🔥 Total de operaciones realizadas: ${totalOperaciones}`);
+    console.log(` Total de operaciones realizadas: ${totalOperaciones}`);
     next();
 });
 
